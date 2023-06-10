@@ -1,0 +1,19 @@
+*.tmp
+*.log
+$HOME/.cache
+$HOME/.dendron
+$HOME/.designer
+$HOME/.gnome
+$HOME/.redhat
+$HOME/.sonarlint
+$HOME/.sts4
+$HOME/.ut_storage
+$HOME/Calibre Library
+$HOME/Documents/1.work/5.complatform/3.backend/3.dockerized/data/mysql
+$HOME/Documents/1.work/5.complatform/3.backend/3.dockerized/data/redis
+$HOME/.local/share/containers/storage/overlay
+$HOME/.local/share/fnm_multishells
+$HOME/.local/share/recently-used.xbel
+$HOME/.local/share/meld/*.meldcmp
+$HOME/Documents/3.personal/.erotic
+$HOME/Documents/3.personal/.erotic.fs
