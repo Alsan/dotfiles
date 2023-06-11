@@ -67,9 +67,8 @@
         "spacing": 5
     },
     "clock": {
-        "format": "󰅐 {:%H:%M}",
+        "format": "󰅐 {:%Y-%m-%d %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
         "format": "﬙ {usage: >3}%",
@@ -99,11 +98,11 @@
     "battery": {
         "states": {
             "warning": 30,
-            "critical": 15,
+            "critical": 15
         },
         "format": "{icon} {capacity}%",
         "format-charging": "󰂄 {capacity}%",
-        "format-plugged": "󰂄{capacity}%",
+        "format-plugged": "󰂄 {capacity}%",
         "format-alt": "{time} {icon}",
         "format-full": "󱈑 {capacity}%",
         "format-icons": [
@@ -122,7 +121,7 @@
         // "on-click": "alacritty -e nmtui"
     },
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
+        "format": "{icon} {volume}%",
         "format-muted": "󰖁 Muted",
         "format-bluetooth": "{icon} {volume: >3}%",
         "format-icons": {
