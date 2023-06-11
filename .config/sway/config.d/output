@@ -20,8 +20,8 @@ output $primary resolution 3840x2160 position 0,0 scale 2
 ## we need to lower the secondary monitor resolution. don't know why,
 ## it just worked!
 
-output $secondary resolution 3840x2160 position 1920,0 scale 2
-# output $secondary resolution 1920x1080 position 1920,0
+# output $secondary resolution 3840x2160 position 1920,0 scale 2
+output $secondary resolution 1920x1080 position 1920,0
 
 ### Workspace to displays
 workspace 1 output $primary
