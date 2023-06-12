@@ -1,4 +1,6 @@
 #!/bin/bash
+
+export XDG_SCREENSHOTS_DIR=${XDG_SCREENSHOTS_DIR:-$HOME/Pictures/5.screenshoots}
  
 entries="Active Screen Output Area Window"
  
