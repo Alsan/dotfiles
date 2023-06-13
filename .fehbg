@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/alsan/Pictures/2.wallpapers/beneath-the-surface.jpg' 
