@@ -1,0 +1,104 @@
+[user]
+  name = alsan
+  email = alsan.wong@gmail.com
+#  signingkey = 9AD911C9F6AA33E5
+
+[commit]
+  # gpgsign = true
+  verbose = true
+
+[tag]
+#  gpgSign = true
+
+[color]
+  ui = true
+
+[core]
+  pager = delta
+  compression = 9
+  editor = nvim
+  excludesfile = ~/.config/gitignore_global
+
+[interactive]
+  diffFilter = delta --color-only
+
+[add.interactive]
+  useBuiltin = false
+
+[push]
+  default = simple
+  followTags = true
+  autoSetupRemote = true
+
+[merge]
+  tool = meld
+  rebase = false
+
+[mergetool]
+  prompt = false
+  keepBackup = false
+
+[mergetool "vimdiff"]
+  cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+
+[mergetool "meld"]
+  path = /usr/bin
+  cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+
+[diff]
+  tool = meld
+
+[difftool]
+  trustExistCode = true
+  prompt = false
+
+[difftool "meld"]
+  path = /usr/bin
+  cmd = meld "$LOCAL" "$REMOTE"
+
+[log]
+  decorate = short
+  date = local
+
+[delta]
+  navigate = true
+  light = false
+  line-numbers = true
+  side-by-side = true
+#  line-numbers-left-format = ""
+#  line-numbers-right-format = "│ "
+  syntax-theme = Nord
+
+[pull]
+  rebase = true
+
+[gpg]
+  program = /bin/gpg2
+
+[init]
+  defaultBranch = master
+
+[credential]
+  helper = store
+
+[gc]
+  autoDetach = false
+
+[http]
+  postBuffer = 524288000
+	sslverify = false
+
+[pager]
+  branch = false
+
+[status]
+  showUntrackedFiles = all
+
+[transfer]
+  fsckobjects = true
+
+[fetch]
+  fsckobjects = false
+
+[sequence]
+  editor = interactive-rebase-tool
