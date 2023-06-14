@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Office Win10 RDP
+Icon=org.remmina.Remmina
+#Exec=xfreerdp /u:alsan /p:'*k99h3N2@CBK&2y2r#UQ' /v:192.168.8.156 +home-drive /smart-sizing /scale:180 /scale-desktop:200 /f /floatbar:sticky:on,default:visible,show:always
+Exec=remmina -c /home/alsan/.local/share/remmina/office_rdp_win10_192-168-43-18.remmina
+Categories=GTK;Utility;

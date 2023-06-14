@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Scrcpy Large
+Icon=/usr/share/icons/hicolor/256x256/apps/scrcpy.png
+Exec=scrcpy -Sw
+Categories=GTK;Utility;
