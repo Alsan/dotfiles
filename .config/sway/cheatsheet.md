@@ -21,6 +21,7 @@
            d           *file manager* (`dolphin`)
            b           *browser* (`brave`)
            c           *vscode projects*
+   Alt     c           *vscode*
            y           *clipboard restore*
 
 # container layout
