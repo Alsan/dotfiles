@@ -11,6 +11,10 @@ use_sdk() {
   done
 }
 
+use_fnm() {
+  fnm use ${1:-v18.16.0}
+}
+
 layout_golang() {
   export GOPATH="$PWD/vendor:$PWD"
   PATH_add "$PWD/vendor/bin"

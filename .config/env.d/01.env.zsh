@@ -81,6 +81,9 @@ export GOMODCACHE="$GOPATH/pkg/mod"
 # sdkman
 export SDKMAN_DIR="$XDG_CACHE_HOME/sdkman"
 
+# fnm
+export FNM_DIR="$XDG_CACHE_HOME/fnm"
+
 # mcfly
 export MCFLY_FUZZY=true
 export MCFLY_RESULTS=20
