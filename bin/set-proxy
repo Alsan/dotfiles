@@ -1,0 +1,2 @@
+export {http,https,ftp,rsync,all}_proxy=socks5h://127.0.0.1:1080
+export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://127.0.0.1:1080 

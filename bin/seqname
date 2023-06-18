@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ls -vp | egrep -v /$ | cat -n | while read n f; do
+  echo "mv -n" "$f" "$(printf '%06d' $n).$(name-parts -e $f)"
+done

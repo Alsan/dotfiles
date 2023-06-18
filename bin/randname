@@ -1,0 +1,15 @@
+#!/bin/sh
+
+FN="$1"
+
+if [[ ! -z $FN ]]; then
+  ext="${FN##*.}"
+  mv "$FN" "$(get-nanoid-filename).$ext"
+else
+  for f in *.avif *.webp *.jpg *.png *.gif *.jpeg; do
+    if [[ -f "$f" ]]; then
+      ext="${f##*.}"
+      mv "$f" "$(get-nanoid-filename).$ext"
+    fi
+  done
+fi

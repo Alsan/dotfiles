@@ -1,0 +1,3 @@
+#!/bin/sh
+
+systemctl list-units --type=socket --state=active | grep virt | awk '{print $1}' | xargs sudo systemctl stop

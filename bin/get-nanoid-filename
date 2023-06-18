@@ -1,0 +1,9 @@
+#!/bin/sh
+
+while true; do
+  id=$(getid nano)
+  if [[ -z "$(echo $id | grep '-')" ]]; then
+    echo $id
+    break
+  fi
+done

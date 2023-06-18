@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo 'HNTE4qMUdp2GtTIP' | $GOPATH/bin/totp-cli generate nvpc alsan 2>&1 | tail -n 1

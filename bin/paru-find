@@ -1,0 +1,24 @@
+#!/bin/sh
+
+SEARCH_FOR="$1"
+
+[[ -z "$SEARCH_FOR" ]] && { echo "Usage: $(basename $0) <keyword>"; exit -1; }
+
+cnt=0
+line0=""
+
+item=$(while IFS= read -r line; do
+  if [[ $cnt == 0 ]]; then
+    line0=$(awk '{print $1}'<<<"$line" | cut -d'/' -f2)
+    tag=""
+    [[ ! -z $(grep -w '\[Installed\]' <<<"$line") ]] && tag="*"
+    [[ ! -z $(grep -w '\[Orphaned\]' <<<"$line") ]] && tag="-"
+    line0="$line0|$tag"
+    cnt=$(($cnt+1))
+  else
+    echo "$line0|$(sed 's/    //g'<<<"$line")"
+    cnt=0
+  fi
+done <<< $(paru -Ss "$SEARCH_FOR") | sort | column -s'|' -t | wofi -d -sep '\t' -G -p 'Package:')
+
+echo $(awk '{print $1}'<<<"$item")
