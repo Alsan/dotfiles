@@ -24,8 +24,8 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 
 # History
-export HISTSIZE=1000
-export SAVEHIST=50000
+export HISTSIZE=20000
+export SAVEHIST=10000
 export HISTFILE=$HOME/.zhistory
 
 # Session
@@ -90,12 +90,15 @@ export MCFLY_RESULTS=20
 export MCFLY_INTERFACE_VIEW=BOTTOM
 export MCFLY_RESULTS_SORT=LAST_RUN
 
+# pier
+export PIER_CONFIG_PATH="$XDG_CONFIG_HOME/pier/config.toml"
+
 # for $HOME/bin, $HOME/.bin, $HOME/.local/bin
 for d in  "$HOME/bin" "$HOME/.bin" "$HOME/.local/bin"; do
   [[ -d "$d" ]] && PATH="$PATH:$d"
 done
 
-# for $XDG_DATA_HOME/cargo/bin, $XDG_DATA_HOME/go/bin
+# for $HOME/.cache/cargo/bin, $HOME/.cache/go/bin
 for d in "$XDG_CACHE_HOME/cargo" "$XDG_CACHE_HOME/go"; do
   [[ -d "$d" ]] && PATH="$PATH:$d/bin"
 done
