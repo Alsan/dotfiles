@@ -24,13 +24,11 @@ h5:before { counter-increment: h5; content: counter(h2) "." counter(h3) "." coun
 h6:before { counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ".\0000a0\0000a0"; }
 */
 
-.img-list {
-  display: flex;
-  gap: 5px;
-
-  a {
-    border: 1px solid darkgray;
-  }
+img, svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
 }
 
 p { text-indent: 2em; }
