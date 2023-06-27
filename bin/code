@@ -1,6 +1,9 @@
 #!/bin/sh
 
-env JAVA_HOME=$SDKMAN_CANDIDATES_DIR/java/current OPENSSL_CONF=$XDG_CONFIG_HOME/openssl.cnf /usr/bin/code \
+env JAVA_HOME=$SDKMAN_CANDIDATES_DIR/java/current \
+    OPENSSL_CONF=$XDG_CONFIG_HOME/openssl.cnf \
+    GOPATH=$XDG_CACHE_HOME/go \
+  /usr/bin/code \
 	--new-window \
 	--no-sandbox \
 	--enable-proposed-api GitHub.copilot \
