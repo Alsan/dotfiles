@@ -14,6 +14,7 @@
     "modules-right": [
         "battery",
         "pulseaudio",
+        "custom/network_traffic",
         "tray",
         "idle_inhibitor",
         "clock",
@@ -24,29 +25,17 @@
         "disable-scroll": true,
         "all-outputs": true,
         "format": "{icon}",
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
-        },
         "format-icons": {
-            "1": "󰋜",
-            "2": "󰖟",
-            "3": "󰠮",
-            "4": "󰭹",
-            "5": "󱓷",
-            "6": "󱇧",
-            "7": "󰊢",
-            "8": "󰖲",
-            "9": "󰕧",
-            "10": "󰝚"
+            "1": "󰎦",
+            "2": "󰎩",
+            "3": "󰎬",
+            "4": "󰎮",
+            "5": "󰎰",
+            "6": "󰎵",
+            "7": "󰎸",
+            "8": "󰎻",
+            "9": "󰎾",
+            "10": "󰽾"
         }
     },
     "sway/mode": {
@@ -68,7 +57,7 @@
     },
     "clock": {
         "format": "󰅐 {:%Y-%m-%d %H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
         "format": "﬙ {usage: >3}%",
@@ -126,15 +115,15 @@
         "format-bluetooth": "{icon} {volume: >3}%",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "",
+            "headset": "󰋎",
             "phone": "",
-            "portable": "",
+            "portable": "󰓃",
             "car": "",
             "default": [
-                "󰖁",
-                "󰖁",
-                "󰖁"
+                "",
+                "",
+                ""
             ]
         },
         "on-click": "pavucontrol"
@@ -163,7 +152,7 @@
         "on-click": "~/.config/waybar/scripts/keyhint.sh"
     },
     "custom/launcher": {
-        "format": " ",
+        "format": "󰹪 ",
         "on-click": "exec nwg-drawer -c 7 -is 70 -spacing 23",
         "tooltip": false
     },
