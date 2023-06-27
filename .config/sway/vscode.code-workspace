@@ -4,5 +4,19 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"[markdown]": {
+			"editor.fontFamily": "JetBrainsMonoNL Nerd Font",
+			"editor.fontLigatures": true,
+			"editor.fontSize": 16,
+			"editor.lineHeight": 24,
+			"editor.lineNumbers": "on",
+			"editor.minimap.enabled": false,
+			"editor.rulers": [
+			  120,
+			  240,
+			  360
+			]
+		  }		
+	}
 }
