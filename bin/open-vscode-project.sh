@@ -5,5 +5,5 @@ SELECTED=$(wofi -d -sep ' ' -i -G -p 'vscode project' <<<$PROJ_LIST)
 
 [[ -z "$SELECTED" ]] && exit 1
 
-echo "$SELECTED" >> $CACHE_LIST
+echo "$SELECTED" >> $XDG_CACHE_HOME/vscode-project-list
 $HOME/bin/code "$HOME/$SELECTED"
